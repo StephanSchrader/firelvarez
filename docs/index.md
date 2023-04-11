@@ -1,4 +1,4 @@
 # Cows
 
 [API](api/)
-[User](/user)
+[User](/user/)
