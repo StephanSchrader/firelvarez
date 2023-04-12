@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: "16"
       - name: Install dependencies
-        run: cd docusaurus && npm ci
+        run: cd docusaurus && npm i
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
