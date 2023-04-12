@@ -36,6 +36,7 @@ jobs:
         with:
           node-version: "16"
           cache: ${{ env.PACKAGE_MANAGER }}
+          cache-dependency-path: 'docusaurus/package-lock.json'
       - name: Install dependencies
         run: cd docusaurus && npm ci
       - name: Setup Pages
