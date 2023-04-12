@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  package-manager: npm
+  PACKAGE_MANAGER: npm
 
 jobs:
   # Build job
@@ -35,7 +35,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-          cache: ${{ package-manager }}
+          cache: ${{ env.PACKAGE_MANAGER }}
       - name: Install dependencies
         run: cd docusaurus && npm ci
       - name: Setup Pages
