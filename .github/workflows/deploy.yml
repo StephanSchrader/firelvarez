@@ -30,8 +30,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo
-        run: echo "${{ github.event.inputs.update-openapi }}"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Node
@@ -39,7 +37,7 @@ jobs:
         with:
           node-version: "18"
       - name: Update OpenAPI
-        if: ${{ github.event.inputs.update-openapi == 'true' || github.event.inputs.update-openapi == '' }}
+        if: ${{ github.event.inputs.update-openapi != 'false' }}
         run: echo "*** UPDATE OPEN API ***"
       - name: Install dependencies
         run: npm ci
