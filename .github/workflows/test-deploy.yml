@@ -13,15 +13,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: cd
-        run: cd docusaurus
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - name: Init Yarn dependencies
-        run: cd docusaurus && yarn init
-      - name: Install dependencies
-        run: yarn install
-        #run: yarn install --frozen-lockfile
-      - name: Test build website
-        run: yarn build

@@ -23,8 +23,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./static/js/sidebars.js"),
-          routeBasePath: '/', // Serve the docs at the site's root
-          path: '../docs',
+          //routeBasePath: '/', // Serve the docs at the site's root
           // Please change this to your repo.
           editUrl: "https://github.com/StephanSchrader/firelvarez/tree/main/docs/",
         },
@@ -50,9 +49,10 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Intro",
+            label: "Docs",
           },
           { to: "/api", label: "API", position: "left" },
+          { to: "/changelog", label: "Changelog", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
