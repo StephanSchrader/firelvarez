@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: "18"
       - name: Update OpenAPI
-        if: ${{ github.event.inputs.update-openapi == 'true' || github.event.inputs.update-openapi == true }}
+        if: ${{ github.event.inputs.update-openapi == 'true' || github.event.inputs.update-openapi == '' }}
         run: echo "*** UPDATE OPEN API ***"
       - name: Install dependencies
         run: npm ci
