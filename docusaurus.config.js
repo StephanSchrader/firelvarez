@@ -21,6 +21,9 @@ const config = {
       "docusaurus-preset-openapi",
       /** @type {import('docusaurus-preset-openapi').Options} */
       ({
+        api: {
+          path: 'src/openapi.json',
+        },
         docs: {
           sidebarPath: require.resolve("./static/js/sidebars.js"),
           //routeBasePath: '/', // Serve the docs at the site's root
