@@ -38,7 +38,8 @@ jobs:
           node-version: "18"
       - name: Update OpenAPI
         if: ${{ github.event.inputs.update-openapi != 'false' }}
-        run: echo "*** UPDATE OPEN API ***"
+        run: |
+          wget -O src/openapi.json https://console.wallis.de/api/v3/api-docs
       - name: Install dependencies
         run: npm ci
       - name: Generate static pages
