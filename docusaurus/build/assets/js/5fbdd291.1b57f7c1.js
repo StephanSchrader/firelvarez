@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs_wallis_de=self.webpackChunkdocs_wallis_de||[]).push([[350],{76233:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-openapi","id":"default"}')}}]);

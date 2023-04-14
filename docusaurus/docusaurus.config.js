@@ -23,17 +23,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./static/js/sidebars.js"),
+          routeBasePath: '/', // Serve the docs at the site's root
           path: '../docs',
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/StephanSchrader/firelvarez/tree/main/docs/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        blog: false,
         theme: {
           customCss: require.resolve("./static/css/custom.css"),
         },
@@ -55,10 +50,9 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Tutorial",
+            label: "Intro",
           },
           { to: "/api", label: "API", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
