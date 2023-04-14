@@ -18,6 +18,8 @@ jobs:
           node-version: 18
           cache: yarn
 
+      - name: Init Yarn dependencies
+        run: cd docusaurus && yarn init
       - name: Install dependencies
         run: yarn install
         #run: yarn install --frozen-lockfile
